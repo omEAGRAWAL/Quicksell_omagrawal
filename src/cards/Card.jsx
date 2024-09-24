@@ -175,7 +175,7 @@ function Header({ tickets, users }) {
         </button>
 
         {showDropdown && (
-          <div className="dropdown-menu">
+          <div className="dropdown-menu"> 
             {/* Grouping Dropdown */}
             <div className="dropdown-group">
               <label htmlFor="grouping">Grouping</label>

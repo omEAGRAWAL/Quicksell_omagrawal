@@ -12,7 +12,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   height: 50px;
-  padding: 10px 30px;
+
+  margin: 0px;
+  padding: 0px;
+  /* padding: 10px 30px; */
   background-color: white;
   width: 100vw; /* Full viewport width */
   box-sizing: border-box; /* Include padding in width calculation */
@@ -27,6 +30,7 @@ body {
   font-size: 18px;
   margin-right: 20px;
   border-radius: 15px;
+  margin-left: 10px;
 }
 
 /* Dropdown container */
@@ -40,7 +44,6 @@ body {
   top: 45px; /* Just below the navbar */
   left: 20px;
   z-index: 1000;
-  background-color: #fff;
 }
 
 /* Dropdown group styling */
