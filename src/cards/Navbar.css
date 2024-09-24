@@ -76,9 +76,13 @@
   display: flex;
   flex-direction: column; /* Default layout is row */
   gap: 20px; 
-  align-items: center;   
+  /* align-items: center;    */
   
   /* Add some space between child divs */
+}
+@media only screen and (max-width:1200px) {
+  .main-body {
+    align-items: center;}
 }
 
 /* Styles for laptop view (1024px and above) */
