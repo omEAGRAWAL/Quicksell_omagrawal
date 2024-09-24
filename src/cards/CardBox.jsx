@@ -1,5 +1,5 @@
 import React from "react";
-import "./sd.css";
+import "./card.css";
 import { GoDotFill } from "react-icons/go";
 
 const Card = (props) => {

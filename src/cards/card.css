@@ -4,17 +4,17 @@
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 5px;
   width: 300px;
-  min-height: 110px;
+  height: 110px;
   margin: 5px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .card-title {
   display: flex;        /* Use flexbox to align items in a row */
   /* align-items: center;  */
-  padding: 5px; /* Vertically align icon and title */
+  /* padding: 5px; Vertically align icon and title */
 }
 
 .card-title-status {

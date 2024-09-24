@@ -1,6 +1,6 @@
 import "./App.css";
 // import Header from "./header/Header";
-import Card from "./cards/Card";
+import Card from "./cards/Home";
 import { useEffect, useState } from "react";
 
 function App() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./home.css";
 import Cardbox from "./CardBox";
 import BACKLOG from "../asset/icons_FEtask/Backlog.svg";
 import IN_PROGRESS from "../asset/icons_FEtask/Cancelled.svg";
