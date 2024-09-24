@@ -1,130 +1,146 @@
+/* Styling for the body */
+body {
+  background-color: #f8f8f8;
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  width: 100%; /* Ensure body takes up the full width */
+}
+
 /* Styling for navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 40px;
-    padding: 10px 30px;
-    border-bottom: 1px solid #e8e7e7;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  padding: 10px 30px;
+  background-color: white;
+  width: 100vw; /* Full viewport width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
 
-  
-  /* Button styling */
-  .dropdown-btn {
-    border: none;
-    height: 35x;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 20px;
-    border-radius: 15px;
-  }
-  
-  /* Dropdown container */
-  .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between dropdown groups */
-    padding: 15px;
-    border-radius: 5px;
-    position: absolute; /* To place it near the button */
-    top: 45px; /* Just below the navbar */
-    left: 20px;
-    z-index: 1000;
-  }
-  
-  /* Individual dropdown group styling */
-  .dropdown-group {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  select {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Hover effects for button */
-  .dropdown-btn:hover {
-    background-color: #666;
-  }
+/* Button styling */
+.dropdown-btn {
+  border: none;
+  height: 35px; /* Fixed the height typo (was 35x) */
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
 
-  .icon-text-container {
-    display: flex;
-     /* Vertically aligns the icon and text */
-  }
+/* Dropdown container */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between dropdown groups */
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px; /* Just below the navbar */
+  left: 20px;
+  z-index: 1000;
+  background-color: #fff;
+}
 
-  .main-page-starting{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    font-size: 40px;
-  }
-  /* .main-body{
-    gap:20px;
-    
-  } */
-  /* Default styles for mobile and tablet views */
+/* Dropdown group styling */
+.dropdown-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #fff;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Hover effects for button */
+.dropdown-btn:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.icon-text-container {
+  display: flex;
+}
+
+.icon-adjust-display {
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+/* Main content centering */
+.main-page-starting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 40px;
+}
+
+/* Main body layout */
 .main-body {
   display: flex;
-  flex-direction: column; /* Default layout is row */
-  gap: 20px; 
-  /* align-items: center;    */
-  
-  /* Add some space between child divs */
-}
-@media only screen and (max-width:1200px) {
-  .main-body {
-    align-items: center;}
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Styles for laptop view (1024px and above) */
-@media only screen and (min-width:1200px) {
+@media only screen and (max-width: 1200px) {
   .main-body {
-    flex-direction: row; 
-    padding: 20px; /* Add some space around the content */
-    /* Change to column for laptop view */
+    align-items: center;
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .main-body {
+    flex-direction: row;
+    padding: 20px; /* Adds padding around the content */
+  }
+}
 
+/* Heading section */
 .heading {
   display: flex;
-  justify-content: space-between; /* Pushes content to opposite sides */
-  align-items: center; /* Aligns vertically in the middle */
+  justify-content: space-between; /* Pushes left and right content to opposite sides */
+  align-items: center; /* Aligns content vertically in the middle */
   padding: 10px;
-  /* font-size: 18px; */
 }
 
 .heading-left {
   display: flex;
-  align-items: center; 
-  /* Aligns the image and text vertically */
+  align-items: center; /* Aligns the image and text vertically */
 }
 
 .heading-left img {
-  margin-right: 10px; /* Space between the image and the heading text */
+  margin-right: 10px; /* Space between the image and text */
 }
 
 .heading-right img {
-  margin-left: 10px; /* Space between the icons in the right section */
+  margin-left: 10px; /* Space between the icons on the right side */
 }
+
 .heading-count {
   color: #696969;
   margin-left: 10px;
   font-size: 18px;
 }
 
-.card-userId  {
+.card-userId {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.priority-text {
+  margin-left: 4px;
+  font-weight: bold;
+  font-size: 16px;
 }

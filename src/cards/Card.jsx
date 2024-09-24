@@ -169,8 +169,8 @@ function Header({ tickets, users }) {
         {/* Button to show dropdown */}
         <button className="dropdown-btn " onClick={toggleDropdown}>
           <div className="icon-text-container">
-            <HiAdjustmentsHorizontal />
-            <>display</>
+            <HiAdjustmentsHorizontal className="icon-adjust-dispplay" />
+            < > display</>
           </div>
         </button>
 
@@ -223,16 +223,37 @@ function Header({ tickets, users }) {
                     />
                   ) : (
                     <img src={getIcon(group)} alt="group" />
-                  )}{" "}
-                  {/* <img src={getIcon(group)} alt="group" /> */}
-                  <h2>{group}</h2>
-                  <div className="heading-count">{group.length}</div>
+                  )}
+
+                  {groupingOption === "priority" ? (
+                    <div className="priority-text">
+                      {group === "0"
+                        ? "No Priority"
+                        : group === "1"
+                        ? "Low Priority"
+                        : group === "2"
+                        ? "Medium Priority"
+                        : group === "3"
+                        ? "High Priority"
+                        : group === "4"
+                        ? "Urgent Priority"
+                        : group}
+                    </div>
+                  ) : (
+                    <h2 className="priority-text">{group}</h2>
+                  )}
+
+                  <div className="heading-count">
+                    {groupedAndSortedTickets[group].length}
+                  </div>
                 </div>
+
                 <div className="heading-right">
-                  <img src={add} alt="" />
-                  <img src={dotmenu} alt="" />
+                  <img src={add} alt="Add" />
+                  <img src={dotmenu} alt="Menu" />
                 </div>
               </div>
+
               {groupedAndSortedTickets[group].map((ticket) => (
                 <>
                   {" "}
