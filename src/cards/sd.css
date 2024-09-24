@@ -1,0 +1,77 @@
+.card-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: 300px;
+  /* min-height: 120px; */
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.card-title {
+  display: flex;        /* Use flexbox to align items in a row */
+  /* align-items: center;  */
+  padding: 5px; /* Vertically align icon and title */
+}
+
+.card-title-status {
+  margin-right: 10px;
+  /* margin-top: 2px  Space between the icon and the text */
+}
+
+.card-title-text h3 {
+  font-size: 12px;
+  color: #333;
+  margin: 0; 
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-id {
+  font-size: 14px;
+  font-weight: bold;
+  color: #7f7c7c;
+}
+
+.card-userId .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.card-footer {
+  display: flex;     
+  align-items: center;
+}
+
+.card-tag {
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding: 2px 10px;
+  border-radius: 1px;
+  border: 1px solid #a5a5a5;
+  color: #a3a0a0;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+
+.status-icon {
+  width: 17px;
+  height: 17xpx;
+  border: 1px solid #a3a0a0;
+
+}
