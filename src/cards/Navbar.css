@@ -75,13 +75,18 @@
 .main-body {
   display: flex;
   flex-direction: column; /* Default layout is row */
-  gap: 20px; /* Add some space between child divs */
+  gap: 20px; 
+  align-items: center;   
+  
+  /* Add some space between child divs */
 }
 
 /* Styles for laptop view (1024px and above) */
 @media only screen and (min-width:1200px) {
   .main-body {
-    flex-direction: row; /* Change to column for laptop view */
+    flex-direction: row; 
+    padding: 20px; /* Add some space around the content */
+    /* Change to column for laptop view */
   }
 }
 
