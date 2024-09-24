@@ -47,6 +47,7 @@ body {
   top: 45px; /* Just below the navbar */
   left: 20px;
   z-index: 1000;
+  background-color: #fff;
 }
 
 /* Dropdown group styling */
